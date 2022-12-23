@@ -2,7 +2,7 @@ uname = ['admin'] #list for username
 pw = ['admi123'] #list for password
 
 while True: #while loop if user wrong iput username or password
-     i = str(input("login or register? >> ")) #conditional if
+     i = str(input("login or register? >> ").lower()) #conditional if
      if i == "register":
           l = str(input("Input your username: ")) #user input new username
           uname.append(l) #append user input to list
