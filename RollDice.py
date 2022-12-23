@@ -36,9 +36,9 @@ EYES_DICE = [
         ]
 
 #choice roll dice or no
-yn = str(input("Roll dice? (yes/no)      => "))
+yn = str(input("Roll dice? (yes/no)      => ").lower())
 while True:
-    if yn == "yes" or yn == "YES" or yn == "Yes":    
+    if yn == "yes":    
         YOUR_DICE = [] # list to store your dice roll
         dices = input("How many dice to roll?   => ")
         if dices.isdigit(): #to check whether "dices" is a number or not
@@ -63,7 +63,7 @@ while True:
                 exit() #exit() to terminate the program
             else:
                 print("Please enter yes/no!!")
-    elif yn == "no" or yn == "NO" or yn == "No":
+    elif yn == "no":
         exit() #exit() is using to terminate the program
     else:
         print("Please enter yes/no!!")
